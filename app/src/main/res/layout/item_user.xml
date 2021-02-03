@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/magnitudetv"
+        android:textSize="24sp"
+        android:layout_marginStart="24dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="75dp"
+        android:layout_toRightOf="@+id/magnitudetv"
+        android:layout_marginTop="24dp"
+        android:text="India" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:text="721979373938"
+        android:layout_marginEnd="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   <!-- <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>
