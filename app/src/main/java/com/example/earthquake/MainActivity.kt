@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             if (response.isSuccessful) {
               response.body().let {
                               colist.addAll(listOf(it!!))
-                             adapter.swapData(it)
+                                     adapter.swapData(it)
               }
                 }
             }
