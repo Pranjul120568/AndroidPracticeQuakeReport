@@ -12,7 +12,7 @@ import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     private val adapter=QuakeAdapter()
-    private val colist= ArrayList<Quakes>()
+    private val colist= ArrayList<FeaturesItem>()
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch(Dispatchers.Main) {
             val response = withContext(Dispatchers.IO) { Client.api.getQuakes() }
             if (response.isSuccessful) {
-              response.body().let {
-                              colist.addAll(listOf(it!!))
+              response.body()!!.features.let {
+                                        colist.addAll(it)
                                      adapter.swapData(it)
               }
                 }
