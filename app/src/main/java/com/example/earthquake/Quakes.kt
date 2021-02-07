@@ -1,10 +1,10 @@
 package com.example.earthquake
 
 data class Quakes(
-	val features: ArrayList<Features?>? = null,
+	val features: ArrayList<Features>
 )
 data class Features(
-	val properties: Properties? = null,
+	val properties: Properties,
     val type:String?=null
 )
 data class Properties(
